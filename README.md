@@ -1,5 +1,6 @@
-imageutils
-==========
+hft-utils
+=========
 
-A few image utils for in browser JavaScript
+A few JavaScript functions for HappyFunTimes example games
+
 
