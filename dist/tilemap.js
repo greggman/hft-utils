@@ -38,7 +38,7 @@ define(
     '../../tdl/tdl/primitives',
     '../../tdl/tdl/programs',
     '../../tdl/tdl/textures',
-    '../../hft-lib/disc/misc/misc',
+    '../../hft-lib/dist/misc/misc',
   ], function(
     Buffers,
     Fast,
