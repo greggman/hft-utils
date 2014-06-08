@@ -1,6 +1,7 @@
-hft-utils
-=========
+hft-lib
+=======
 
-A few JavaScript functions for HappyFunTimes example games
+The HappyFunTimes game and client side libraries
+
 
 
