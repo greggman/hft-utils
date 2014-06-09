@@ -38,7 +38,6 @@ define(
     '../../tdl/tdl/primitives',
     '../../tdl/tdl/programs',
     '../../tdl/tdl/textures',
-    '../../hft-lib/dist/misc/misc',
   ], function(
     Buffers,
     Fast,
@@ -46,8 +45,7 @@ define(
     Models,
     Primitives,
     Programs,
-    Textures,
-    Misc) {
+    Textures) {
 
   var s_vertexBasedTileVertexShader = [
     "attribute vec4 position;                   ",
