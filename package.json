@@ -1,7 +1,7 @@
 {
   "name": "hft-utils",
   "description": "A few JavaScript utils for happy fun times example games",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": true,
   "dependencies": {
   },
