@@ -51,7 +51,7 @@ define(function() {
   // @param {!function()} callback. function to call when all images have loaded.
   var loadImages = function(images, callback) {
     var count = 0;
-    for (var name in images) {
+    Object.keys(images).forEach(function(name) {
       count++;
       images[name].img = loadImage(images[name].url, function() {
         count--;
@@ -59,7 +59,7 @@ define(function() {
           callback();
         }
       });
-    }
+    });
   };
 
   return {

@@ -126,9 +126,9 @@ define(
 
   var setTileMesh = function(model, tilesAcross, tilesDown) {
     var arrays = makeTileMesh(tilesAcross, tilesDown);
-    for (var name in arrays) {
+    Object.keys(arrays).forEach(function(name) {
       model.setBuffer(name, arrays[name]);
-    }
+    });
   };
 
   var createVertexBasedTileModel = function(textures) {

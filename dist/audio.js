@@ -283,7 +283,7 @@ define([
       };
 
       if (sounds) {
-        for (var sound in sounds) {
+        Object.keys(sounds).forEach(function(sound) {
           var data = sounds[sound];
           ++soundsPending;
           if (data.jsfx) {
@@ -291,7 +291,7 @@ define([
           } else {
             this.loadSound(sound, data.filename, data.samples, soundsLoaded);
           }
-        }
+        }.bind(this));
       }
 
       // so that we generate a callback even if there are no sounds.
