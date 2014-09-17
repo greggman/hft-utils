@@ -1,7 +1,9 @@
-hft-lib
-=======
+hft-utils
+=========
 
-The HappyFunTimes game and client side libraries
+Various functions used by many of the [happyFunTimes samples](http://greggman.github.io/HappyFunTimes)
+
+
 
 
 
