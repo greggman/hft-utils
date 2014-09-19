@@ -29,6 +29,6 @@
     "tests"
   ],
   "dependencies": {
-    "tdl": "https://github.com/greggman/tdl.git#0.0.2"
+    "tdl": "https://github.com/greggman/tdl.git#0.0.6"
   }
 }
