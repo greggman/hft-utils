@@ -100,7 +100,7 @@ define(function() {
       case 5: r = v, g = p, b = q; break;
     }
 
-    return [r * 255, g * 255, b * 255];
+    return [r * 255 | 0, g * 255 | 0, b * 255 | 0];
   };
 
   /**
@@ -271,6 +271,10 @@ define(function() {
    *           text.
    * @property {number?} minWidth minWith to make the canvas.
    *           unset = let the canvas go as small as the text.
+   * @property {number?} padding
+   * @property {function(Canvas2DRenderingContext)} prepFn
+   *           function to call before rendering the text. Let's
+   *           you draw a frame or whatever.
    */
 
   /**
@@ -299,10 +303,14 @@ define(function() {
       width = Math.max(width, options.minWidth);
     }
 
-    canvas.width = width;
-    canvas.height = options.height;
+    var padding = options.padding || 0;
 
-    if (options.backgroundColor) {
+    canvas.width = width + padding * 2;
+    canvas.height = options.height + padding * 2;
+
+    if (options.prepFn) {
+      options.prepFn(ctx);
+    } else if (options.backgroundColor) {
       ctx.fillStyle = options.backgroundColor;
       ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     } else {
@@ -313,8 +321,8 @@ define(function() {
     setCanvasFontStyles(ctx, options);
     ctx.fillText(
         str,
-        options.xOffset || 0,
-        options.yOffset || 0);
+        (options.xOffset || 0) + padding,
+        (options.yOffset || 0) + padding);
 
     ctx.restore();
     return canvas;
@@ -323,7 +331,9 @@ define(function() {
   return {
     adjustHSV: adjustHSV,
     cropImage: cropImage,
+    hsvToRgb: hsvToRgb,
     makeTextImage: makeTextImage,
+    rgbToHsv: rgbToHsv,
     scaleImage: scaleImage,
   };
 });
