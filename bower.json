@@ -29,6 +29,7 @@
     "tests"
   ],
   "dependencies": {
-    "tdl": "https://github.com/greggman/tdl.git#0.0.8"
+    "tdl": "https://github.com/greggman/tdl.git#0.0.8",
+    "pako": "~0.2.5"
   }
 }
