@@ -1,8 +1,8 @@
 {
   "name": "hft-utils",
   "description": "A few JavaScript utils for happy fun times example games",
-  "version": "0.8.1",
-  "private": true,
+  "version": "0.8.2",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/greggman/hft-utils.git"
