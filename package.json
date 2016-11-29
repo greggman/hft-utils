@@ -1,8 +1,24 @@
 {
   "name": "hft-utils",
   "description": "A few JavaScript utils for happy fun times example games",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greggman/hft-utils.git"
+  },
+  "keywords": [
+    "happyfuntimes",
+    "hft",
+    "games",
+    "multiplayer"
+  ],
+  "author": "Gregg Tavares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greggman/hft-utils/issues"
+  },
+  "homepage": "https://github.com/greggman/hft-utils#readme",
   "dependencies": {
   },
   "devDependencies": {
@@ -13,5 +29,5 @@
   "files": [
     "3rdparty",
     "dist"
-  ],
+  ]
 }
