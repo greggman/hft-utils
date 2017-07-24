@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/greggman/hft-utils#readme",
   "dependencies": {
+    "pako": "^1.0.3"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
